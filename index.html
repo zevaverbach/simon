@@ -6,7 +6,7 @@
     <style>
       body {
 	background-image: url("weird_flamingo.png");
-	background-size: 380px 363px;
+	background-size: 40vw;
       }
       #container {
 	height: 100%;
@@ -15,18 +15,43 @@
 	display: flex;
         align-items: center;
         justify-content: center;
+	flex-direction: column;
       }
 
       #title {
-        color: yellow;
-	font-size: 10em;
+        color: #222;
+	font-size: 6em;
         max-width: 50%;
+      }
+      
+      .heading {
+	font-size: 4em;
+	color: dodgerblue;
+      }
+
+      .link {
+	color: red;
+	font-size: 2em;
+      }
+
+      #songs {
+	background-color: rgba(0, 0, 0, .5);
+	padding: 1em;
+        align-items: center;
+        justify-content: center;
+	flex-direction: column;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <div id="title">Simon Averbach</div>
+      <div id="title">Simon Alexander Averbach</div>
+      <div id="songs">
+        <div class=heading>Songs:</div>
+	<div>
+	  <a class=link href="/1" target=_blank>1 by Simon Alexander Averbach (Spotify)</a>
+	</div>
+      </div>
     </div>
   </body>
 </html>
